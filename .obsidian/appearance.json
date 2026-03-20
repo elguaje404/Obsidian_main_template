@@ -1,0 +1,18 @@
+{
+  "accentColor": "#9a191c",
+  "interfaceFontFamily": "",
+  "cssTheme": "Minimal",
+  "baseFontSize": 18,
+  "baseFontSizeAction": true,
+  "textFontFamily": "",
+  "enabledCssSnippets": [
+    "Colored Sidebar Items",
+    "Daily Note Themes",
+    "Japanese Font Support",
+    "Minecraft",
+    "Notebook Backgrounds",
+    "Runescape",
+    "CyanVoxel's General Tweaks",
+    "Fonts"
+  ]
+}

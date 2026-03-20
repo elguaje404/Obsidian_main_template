@@ -1,0 +1,46 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "LiFolderTree",
+      "LiFolderClock",
+      "LiGlobe",
+      "LiCodepen",
+      "LiFolderClosed"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "00 - Maps of Content": "LiLayoutDashboard",
+  "04 - Permanent ZETTEL": "LiNotebookText",
+  "05 - Fleeting ZETTEL": "LiLightbulb",
+  "06 - Daily": "LiCalendarDays",
+  "07 - Archives PARA": "LiFolderClosed",
+  "99 - Meta": "LiCodepen",
+  "03 - Resources PARA ZETTEL": "LiGlobe",
+  "01 - Projects PARA": "LiFolderClock",
+  "02 - Areas PARA": "LiFolderTree"
+}

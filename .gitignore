@@ -1,0 +1,9 @@
+.git/
+.trash/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local session state recreated by Obsidian.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json

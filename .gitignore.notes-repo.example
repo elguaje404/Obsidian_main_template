@@ -1,0 +1,33 @@
+# Example .gitignore for a real notes vault synced with Git.
+# Goal:
+# - keep notes and shareable vault configuration under version control
+# - ignore local session state, OS noise, and the bundled portable Git
+# - stay compatible with automatic backups via obsidian-git
+
+# Repository metadata
+.git/
+
+# Portable Git bundled with this template.
+# Ignore it in a real notes repo unless you explicitly want to version binaries.
+.obsidian/git_portable/
+
+# Local Obsidian session state regenerated on each machine.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Trash and OS noise
+.trash/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Optional: ignore local plugin data that tends to be machine-specific.
+# Leave these commented unless you confirm they add noise in your setup.
+# .obsidian/plugins/obsidian-git/data.json
+# .obsidian/plugins/notebook-navigator/data.json
+
+# Optional: ignore generated exports or heavy attachments if your vault uses them.
+# Uncomment only if you do not want them in the notes backup repo.
+# Excalidraw/**/*.png
+# Excalidraw/**/*.svg
+# Attachments/

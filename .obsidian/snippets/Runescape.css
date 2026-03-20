@@ -1,0 +1,108 @@
+/*------------------------------------------------------------------------------
+                      RuneScape Theme by CyanVoxel v1.0.2
+------------------------------------------------------------------------------*/
+
+:root {
+  --osrs-orange: #ff9b20;
+  --osrs-yellow: #ffee00;
+  --osrs-pen-orange-trans: #ff9b2022;
+  --osrs-pen-orange-accent: #ff9b2066;
+  --osrs-page-brown: #383027;
+}
+
+.osrs {
+  --font-text-fallback: "JetBrainsMonoCustom", monospace;
+  --font-text: "IM Fell English", serif;
+  --font-editor-override: "IM Fell English", serif;
+  --font-text-override: "IM Fell English", serif;
+  --font-editor: var(--font-editor-override), var(--font-text-override), "IM Fell English", serif;
+  --h1-font: "IM Fell English", serif;
+  --font-italic: "RuneScape Quill 8", "IM Fell English", serif;
+  --font-text-size: 24px;
+  --h1-weight: 0;
+  --h2-weight: 0;
+  --h3-weight: 0;
+  --h4-weight: 0;
+  --h5-weight: 0;
+  --h6-weight: 0;
+  --page-color: var(--osrs-page-brown);
+  --accent-color: var(--osrs-orange);
+  --accent-color-trans: var(--osrs-pen-orange-trans);
+  --line-height-normal: 24px;
+
+  color-scheme: dark;
+  background-color: var(--osrs-page-brown);
+  --text-normal: var(--accent-color);
+  --text-muted: var(--accent-color);
+  --checklist-done-color: var(--accent-color);
+  --metadata-label-text-color: var(--accent-color);
+  --tag-color: var(--accent-color);
+  --link-color: var(--osrs-yellow);
+  --link-color-hover: color-mix(in srgb, var(--osrs-yellow) 50%, white);
+  --link-external-color: var(--osrs-yellow);
+  --link-unresolved-color: #ff0000;
+
+  --metadata-input-text-color: var(--accent-color);
+  --tag-background: var(--accent-color-trans);
+
+  --code-normal: var(--accent-color);
+  --code-background: color-mix(in srgb,var(--page-color) 80%,black) !important;
+  --text-faint: var(--accent-color-trans);
+  --blockquote-border-color: var(--accent-color);
+  --interactive-accent: var(--accent-color);
+  --collapse-icon-color-collapsed: var(--accent-color);
+  --checkbox-color: var(--accent-color);
+  --checkbox-marker-color: var(--page-color);
+  --checkbox-color-hover: var(--accent-color-trans);
+  --checkbox-border-color: var(--accent-color);
+  --list-marker-color: var(--accent-color);
+  --embed-border-left: 2px solid var(--accent-color);
+  --background-modifier-border-focus: var(--accent-color);
+  --background-modifier-border: var(--accent-color-trans);
+  --background-modifier-hover: var(--accent-color-trans);
+  --metadata-input-background-active: var(--accent-color-trans);
+  color: white;
+  --hr-color: var(--accent-color);
+}
+.embed-osrs img {
+  background-color: var(--osrs-page-brown);
+}
+
+.osrs.markdown-preview-view,
+.osrs.markdown-rendered,
+.osrs .markdown-preview-sizer,
+.osrs .markdown-preview-section,
+.osrs .markdown-preview-section > div,
+.osrs .cm-content,
+.osrs.markdown-source-view.mod-cm6 .cm-contentContainer,
+.osrs.markdown-source-view.mod-cm6 .cm-scroller {
+  font-family: var(--font-text);
+}
+
+.osrs :is(h1, .HyperMD-header.HyperMD-header-1) {
+  font-family: var(--h1-font);
+  color: var(--osrs-orange);
+  text-align: center;
+}
+.osrs :is(h2, .HyperMD-header.HyperMD-header-2) {
+  font-family: var(--h1-font);
+  color: var(--osrs-orange);
+  text-align: center;
+}
+
+.osrs .multi-select-input {
+  font-family: var(--font-text);
+}
+
+.osrs :is(em, i) {
+  font-family: var(--font-italic);
+  font-style: italic;
+}
+
+.osrs svg {
+  color: var(--osrs-orange);
+}
+
+.osrs hr {
+  color: var(--accent-color);
+}

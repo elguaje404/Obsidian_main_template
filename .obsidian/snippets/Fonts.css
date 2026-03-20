@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap");
+
+/* =====================================================
+   Font Loading
+   ===================================================== */
+
+/* ---------- JetBrains Mono ---------- */
+
+@font-face {
+  font-family: "JetBrainsMonoCustom";
+  src: url("../fonts/JetBrainsMono-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMonoCustom";
+  src: url("../fonts/JetBrainsMono-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "JetBrainsMonoCustom";
+  src: url("../fonts/JetBrainsMono-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMonoCustom";
+  src: url("../fonts/JetBrainsMono-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* ---------- Junicode ---------- */
+
+@font-face {
+  font-family: "JunicodeCustom";
+  src: url("../fonts/Junicode-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JunicodeCustom";
+  src: url("../fonts/Junicode-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "JunicodeCustom";
+  src: url("../fonts/Junicode-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JunicodeCustom";
+  src: url("../fonts/Junicode-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* ---------- Minecraft ---------- */
+
+/* Minecraft theme font is intentionally loaded from Google Fonts.
+   Local files were unreliable in this Obsidian/Electron setup. */
+
+/* ---------- Theme Font Utility Classes ---------- */
+
+.font-minecraft,
+.font-minecraft.markdown-rendered,
+.font-minecraft.markdown-preview-view,
+.font-minecraft .markdown-preview-sizer,
+.font-minecraft .markdown-preview-section,
+.font-minecraft .markdown-preview-section > div,
+.font-minecraft .cm-content,
+.font-minecraft.markdown-source-view.mod-cm6 .cm-contentContainer,
+.font-minecraft.markdown-source-view.mod-cm6 .cm-scroller {
+  --font-text: "Pixelify Sans", monospace;
+  --font-editor-override: "Pixelify Sans", monospace;
+  --font-text-override: "Pixelify Sans", monospace;
+  --font-editor: var(--font-editor-override), var(--font-text-override), "Pixelify Sans", monospace;
+  font-family: "Pixelify Sans", monospace;
+}
+
+.font-osrs,
+.font-osrs.markdown-rendered,
+.font-osrs.markdown-preview-view,
+.font-osrs .markdown-preview-sizer,
+.font-osrs .markdown-preview-section,
+.font-osrs .markdown-preview-section > div,
+.font-osrs .cm-content,
+.font-osrs.markdown-source-view.mod-cm6 .cm-contentContainer,
+.font-osrs.markdown-source-view.mod-cm6 .cm-scroller {
+  --font-text: "IM Fell English", serif;
+  --font-editor-override: "IM Fell English", serif;
+  --font-text-override: "IM Fell English", serif;
+  --font-editor: var(--font-editor-override), var(--font-text-override), "IM Fell English", serif;
+  font-family: "IM Fell English", serif;
+}
+
+/* ---------- RuneScape ---------- */
+
+@font-face {
+  font-family: "RuneScape Plain 12";
+  src: url("../fonts/RuneScape-Plain-12.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RuneScape Bold 12";
+  src: url("../fonts/RuneScape-Bold-12.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RuneScape Quill 8";
+  src: url("../fonts/RuneScape-Quill-8.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* =====================================================
+   Obsidian Typography
+   ===================================================== */
+
+body {
+  /* Interface */
+  --font-interface: "JunicodeCustom", serif;
+
+  /* Main note text */
+  --font-text: "JetBrainsMonoCustom", monospace;
+
+  /* Code */
+  --font-monospace: "JetBrainsMonoCustom", monospace;
+}
+
+/* Keep note headings aligned with the main text font unless a theme snippet overrides them. */
+.markdown-preview-view:not(.minecraft):not(.osrs) :is(h1, h2, h3, h4, h5, h6),
+.markdown-source-view.mod-cm6:not(.minecraft):not(.osrs) .cm-header {
+  font-family: var(--font-text);
+}
+
+code,
+.cm-inline-code,
+.markdown-rendered pre,
+.markdown-rendered pre code,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock span {
+  font-family: var(--font-monospace);
+}
